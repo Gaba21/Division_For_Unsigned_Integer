@@ -8,8 +8,8 @@ library ieee;
 
 entity restoring_division is
   generic (
-    m              : integer := 10; --! Divisor
-    width_dividend : integer := 6   --! With dividend register
+    m              : integer; --! Divisor
+    width_dividend : integer   --! With dividend register
   );
   port (
     clk          : in    std_logic;                                     --! Clock
